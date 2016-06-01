@@ -28,6 +28,9 @@ function doSomethingCool() {
 }
 
 // Put your answer below -------------------------
+var doSomethingCool = function(){
+  console.log("Something Cool!");
+};
 
 
 // -----------------------------------------------
@@ -48,7 +51,11 @@ function sayHi() {
 setTimeout(sayHi, 2000);
 
 // Put your answer below -------------------------
+var sayHi = function() {
+  alert("Hello, World!");
+};
 
+setTimeout(sayHi, 2000);
 
 // -----------------------------------------------
 
@@ -79,6 +86,11 @@ console.log("The letter is", letter);
 
 // Put your answer below -------------------------
 
+//MY ANSWER:
+//[c] The letter "z" will be logged first as global code is executed before function
+//code. The letter "x" was not run because the variable "letter" was reassigned
+//on line 84. The letter "y" will run next because it is reassigned within the
+//function.
 
 // -----------------------------------------------
 
@@ -100,7 +112,9 @@ var reverseStr = function(str) {
 };
 
 // Put your answer below -------------------------
-
+function reverseStr(str) {
+  return str.split('').reverse().join('');
+}
 
 // -----------------------------------------------
 
@@ -134,6 +148,12 @@ var spanishColor = function(colorName) {
 };
 
 // Put your answer below -------------------------
+var colorName = {
+  rojo:"#ff0000", blanco: "#ffffff", azul: "#0000ff", verde: "#00ff00", negro: "#000000"};
+
+var spanishColor = function(colorName) {
+  return rojo;
+};
 
 
 // -----------------------------------------------
@@ -151,7 +171,8 @@ var spanishColor = function(colorName) {
 var foo = "bar";
 
 // Put your answer below -------------------------
-
+var foo;
+foo = 'bar';
 
 // -----------------------------------------------
 
@@ -173,6 +194,12 @@ var callTenTimes = function(callback) {
 };
 
 // Put your answer below -------------------------
+var callTenTimes = function(callback) {
+  for(var i=1; i<=10; i++){
+    callback();
+  }
+};
+
 
 
 // -----------------------------------------------
@@ -203,6 +230,16 @@ var decreaseScore = function() {
 // Put your answer below -------------------------
 
 
+var increaseScore = function() {
+  var score = 0;
+  score++;
+};
+
+var decreaseScore = function() {
+  var score = 0;
+  score--;
+};
+
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -221,7 +258,11 @@ var addNumbers = function(numberA, numberB) {
 var twoPlusTwo = addNumbers(2,2);
 
 // Put your answer below -------------------------
+var addNumbers = function(numberA, numberB) {
+  return numberA + numberB;
+};
 
+var twoPlusTwo = addNumbers(2,2);
 
 // -----------------------------------------------
 
@@ -247,7 +288,16 @@ var accelerate = function(amount) {
 };
 
 // Put your answer below -------------------------
+//It is giving the error NaN because the function needs a number to run properly.
+//When no number is entered, NaN or Not a Number comes up
 
+var accelerate = function(amount) {
+  if (amount === ''){
+    amount = 1;
+  }else{
+  speed += amount;
+}
+};
 
 // -----------------------------------------------
 
