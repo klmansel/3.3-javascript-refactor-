@@ -152,7 +152,7 @@ var colorName = {
   rojo:"#ff0000", blanco: "#ffffff", azul: "#0000ff", verde: "#00ff00", negro: "#000000"};
 
 var spanishColor = function(colorName) {
-  return rojo;
+  return colorName;
 };
 
 
@@ -194,13 +194,20 @@ var callTenTimes = function(callback) {
 };
 
 // Put your answer below -------------------------
+//Using the following and refactoring:
 var callTenTimes = function(callback) {
   for(var i=1; i<=10; i++){
     callback();
   }
 };
+//My solution:
+function callNTimes(timesToCall) {
+  for (var i=1; i<=timesToCall; i++){
+    return timesToCall;
+  }
+}
 
-
+//?????
 
 // -----------------------------------------------
 
